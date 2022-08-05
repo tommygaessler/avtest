@@ -1,0 +1,15 @@
+video {
+  width: 100%;
+}
+
+.pids-wrapper {
+  width: 100%;
+}
+
+.pid {
+  width: 50px;
+  height: 10px;
+  display: inline-block;
+  margin: 5px;
+  background-color: #e6e7e8;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AV Preview</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <button onClick="previewVideo()">Preview Video</button>
+    <button onClick="stopPreviewVideo()">Stop Preview Video</button>
+
+    <!-- <button onClick="previewSpeaker()">Preview Speaker</button> -->
+    <!-- <button onClick="stopPreviewSpeaker()">Stop Preview Speaker</button> -->
+
+    <button onClick="startAudio()">Start Audio</button>
+    <button onClick="stopAudio()">Stop Audio</button>
+
+    <button onClick="previewMicrophone()">Preview Microphone</button>
+    <button onClick="stopPreviewMicrophone()">Stop Preview Microphone</button>
+
+    <div class="pids-wrapper">
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+      <div class="pid"></div>
+    </div>
+
+    <video id="preview-camera-video" width="1920" height="1080"></video>
+
+    <script src="https://source.zoom.us/videosdk/zoom-video-1.4.0.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
